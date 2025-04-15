@@ -1,0 +1,39 @@
+/* src/Quote.css (또는 src/components/Quote.css) */
+
+.quote-container {
+    padding: 20px;
+    margin: 20px auto; /* 가운데 정렬 및 상하 여백 */
+    max-width: 600px; /* 최대 너비 제한 */
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: 'Georgia', serif; /* 명언에 어울리는 폰트 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text {
+    font-size: 1.2em; /* 명언 텍스트 크기 */
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.quote-author {
+    font-size: 1em;
+    color: #555;
+    font-weight: bold;
+}
+
+.quote-container.error {
+    color: red;
+    border-color: red;
+    background-color: #ffebee;
+}
+
+.quoteBtn {
+    margin-top: 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}

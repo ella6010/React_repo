@@ -1,107 +1,11 @@
-body {
-  font-family: 'Pretendard', sans-serif;
-  background-color: #f9f9f9;
-  padding: 40px;
-  color: #333;
-}
-
-.add {
-  background: white;
-  padding: 12px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-input {
+.App {
+  max-width: 500px;
   width: 100%;
-  padding: 8px 12px;
-  margin-right: 8px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-}
-
-button {
-  padding: 8px 12px;
-  margin-right: 4px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  background-color: white;
-  color: #0095ff;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.addBtn{
-  width: 7rem;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  background: white;
-  padding: 12px;
-  margin-bottom: 10px;
-  border-radius: 8px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px;
+  /* border: 1px solid gray; <- 삭제하거나 주석 처리 하세요 */
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  flex-direction: column;
+  gap: 30px;
 }
-
-li input {
-  flex: 1;
-  margin-left: 12px;
-  margin-right: 12px;
-}
-
-hr {
-  margin: 30px 0;
-  border: none;
-  border-top: 1px solid #ddd;
-}
-
-.time {
-  text-align: center;
-  margin-top: 16px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #4b5563;
-}
-
-.quote {
-  width: 100%;
-  color: black;
-  /* display: block; /* 제거 */
-  margin: 16px 0; /* 좌우 마진은 제거하거나 필요에 맞게 조정 */
-  padding: 16px 0; /* 위아래 패딩 추가 (선택 사항) */
-  font-size: 1rem;
-  /* justify-content: center; /* 제거 (block에서는 효과 없음) */
-
-  /* --- 추가/수정된 속성 --- */
-  display: flex;           /* Flexbox 컨테이너로 변경 */
-  flex-direction: column;  /* 자식 요소들을 세로로 배치 */
-  align-items: center;     /* 자식 요소들을 가로축 기준 가운데 정렬 */
-  text-align: center;      /* 컨테이너 내의 텍스트 자체를 가운데 정렬 */
-}
-
-/* .refreshBtn 스타일은 그대로 두거나 필요시 조정 */
-.refreshBtn {
-  margin-top: 10px;
-  padding: 6px 12px;
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  /* 버튼 자체를 가운데 정렬할 필요는 없음 (부모인 .quote가 처리) */
-}
-
-/* 기존 CSS의 나머지 부분은 그대로 유지 */
-/* ... (body, .add, input, button, .addBtn, ul, li, hr, .time 등) ... */
