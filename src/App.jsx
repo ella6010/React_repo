@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 const Container = styled.div`
   width: 100vw;
@@ -48,6 +48,17 @@ const BackgroundColorDiv = styled.div`
   height: 100px;
 `;
 
+//전역 스타일 설정
+const GlobalStyle = createGlobalStyle`
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  input {
+    width: 90%;
+  }
+`;
+
 function App() {
   const [input1, setInput1] = useState(0)
   const [input2, setInput2] = useState(0)
@@ -55,6 +66,7 @@ function App() {
   const [input4, setInput4] = useState(0)
   return (
     <>
+    <GlobalStyle />
     <Container input1={input1} input2={input2} input3={input3} input4={input4} >
       <div>hello</div>
 
