@@ -23,31 +23,55 @@
 $tag-color: #d7fa00;
 $gray: rgb(160, 160, 160);
 
+<<<<<<< HEAD
 .header-container {
   @include flex($justify: space-between, $align: center);
   padding: 20px 20px;
+=======
+// 1️⃣. App.jsx
+section {
+  @include flex($wrap: wrap, $gap: 20px);
+  padding: 20px 40px;
+}
+
+// 2️⃣. components/Header.jsx
+.header-container {
+  @include flex($justify: space-between, $align: center);
+  padding: 10px 20px;
+>>>>>>> 7b4c041 (React 11일차 과제)
   background-color: black;
   ul {
     @include flex($justify: center, $align: center, $gap: 20px);
     li {
+<<<<<<< HEAD
       @include font($size: 16px, $weight: 400);
+=======
+      @include font($size: 13px, $weight: 400);
+>>>>>>> 7b4c041 (React 11일차 과제)
       list-style: none;
     }
   }
 }
 
+<<<<<<< HEAD
 section {
   @include flex($justify: center, $align: center, $wrap: wrap, $gap: 20px);
   padding: 20px 40px;
 }
 
+=======
+// 3️⃣. components/Content.jsx
+>>>>>>> 7b4c041 (React 11일차 과제)
 .content-container {
   @include flex($direction: column, $align: flex-start, $gap: 5px);
   img {
     width: 300px;
     border-radius: 10px;
     margin-bottom: 3px;
+<<<<<<< HEAD
     min-height: 225px;
+=======
+>>>>>>> 7b4c041 (React 11일차 과제)
   }
   span {
     @include font($size: 12px);
@@ -63,4 +87,8 @@ section {
     @include font($size: 12px);
     color: $gray;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7b4c041 (React 11일차 과제)
