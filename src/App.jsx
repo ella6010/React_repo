@@ -57,6 +57,13 @@ const GlobalStyle = createGlobalStyle`
   input {
     width: 90%;
   }
+  span {
+    color: red;
+    &:hover {
+      background-color: black;
+    }
+  }
+
 `;
 
 function App() {
