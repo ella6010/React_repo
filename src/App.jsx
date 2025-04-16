@@ -21,7 +21,7 @@ function App() {
         ))}
       </ContentsContainer>
     </>
-  );
+  );  
 }
 
 export default App;
