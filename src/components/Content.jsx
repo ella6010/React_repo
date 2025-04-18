@@ -1,4 +1,3 @@
-
 export default function Content({ content }) {
   return (
     <div className="flex flex-col items-start gap-[5px]">
