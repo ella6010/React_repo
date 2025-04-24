@@ -14,4 +14,4 @@ export default function Detail () {
             <img className="w-[200px]" src={pokemon.front} />
         </div>
     )
-}
+} 
